@@ -7,17 +7,33 @@
   <body>
     <header class="main-header">
         <nav class="main-navigation">
-          <a class="main-header-logo" href="url">
-            <img src="url" width="100" height="100" alt="Логотоп GllacyShop">
+          <a class="main-header-logo">
+            <img src="img/logo.svg" class="Logo" alt="Logo GllacyShop">
           </a>
           <ul class="site-navigation">
-            <li><a href="url">Каталог</li>
-            <li><a href="url">Доставка и оплата</li>
-            <li><a href="url">О Компании</li>
+            <li><a href="#">Каталог<span class="catalog-hover"></span></li>
+              <!--Здесь будет выпадающий список. Можно подсказку? -->
+            <li><a href="#">Доставка и оплата</li>
+            <li><a href="#">О Компании</li>
           </ul>
           <ul class="user-navigation">
-            <li class="search-link"></li>
-            <li class="login-link">Вход</li>
+            <li class="search-link"><span class="search-hover"></span></li>
+            <li class="login-link">Вход
+              <div class="login">
+                <form action="#" method="post">
+                <label for="login-field"></label>
+                <input type="email" name="login" id="login-field" placeholder="Электронная почта">
+                <br>
+                <label for="password-field"></label>
+                <input type="password" name="password" id="password-field" placeholder="Пароль">
+                <br>
+                <input type="submit" value="Войти">
+              </form>
+              <a href=#>Забыли пароль?</a>
+              <a href=#>Новая регистрация</a>
+            </div>
+              <!-- Как сделать так, чтобы форма входа выпадала?-->
+            </li>
             <li class="basket-link">Пусто</li>
           </ul>
           </nav>
@@ -26,21 +42,32 @@
       </header>
       <main>
         <div class="container">
-          <h1>Крем-брюле и пломбир <br>с малиновым джемом<h1>
-            <a class="button-big" href="url">Давайте оба!</a>
+          <h1>Крем-брюле и пломбир с малиновым джемом<h1>
+            <a class="button-big" href="#">Давайте оба!</a>
           </div>
+          <ul class="slides-switches">
+              <li class="slide-radio">
+              <button type="button" class="slide-btn"></button>
+              </li>
+              <li class="slide-radio">
+              <button type="button" class="slide-btn"></button>
+              </li>
+              <li class="slide-radio">
+              <button type="button" class="slide-btn"></button>
+              </li>
+            </ul>
           <div class="choices">
             <div class="choices-item1">
-              <img src="url" width="200" height="100" alt="Berry">
+              <img src="#" width="200" height="100" alt="Berry">
               <h2>Малинка даром!</h2>
               <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-              <a class="button-small" href="url">Хочу варенье!</a>
+              <a class="button-small" href="#">Хочу варенье!</a>
             </div>
             <div class="choices-item2">
-              <img src="url" width="200" height="100" alt="Choco">
+              <img src="#" width="200" height="100" alt="Choco">
               <h2>Шоколадки даром!</h2>
               <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-              <a class="button-small" href="url">Хочу шоколадки!</a>
+              <a class="button-small" href="#">Хочу шоколадки!</a>
             </div>
           </div>
           <div class="icecream">
@@ -48,47 +75,49 @@
             <p class="price">310₽</p>
             <span class="kg">кг</p>
               <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+              <span class=icecream-hover><button type="button" value="Быстрый просмотр"></span>
           </div>
           <div class="icecream">
             <img src="http://placehold.it/100x100">
             <p class="price">380₽</p>
             <span class="kg">кг</p>
               <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+              <span class=icecream-hover><button type="button" value="Быстрый просмотр"></span>
           </div>
           <div class="icecream">
             <img src="http://placehold.it/100x100">
             <p class="price">355₽</p>
             <span class="kg">кг</p>
               <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+              <span class=icecream-hover><button type="button" value="Быстрый просмотр"></span>
           </div>
           <div class="icecream">
             <img src="http://placehold.it/100x100">
             <p class="price">415₽</p>
             <span class="kg">кг</p>
               <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+              <span class=icecream-hover><button type="button" value="Быстрый просмотр"></span>
           </div>
           <section class="information">
             <h3>Магазин Глейси - это онлайн- и офлайн-магазин по продаже мороженого собственного проивзодства на развес<h3>
               <p>Всё наше мороженое изготавливается на собственном производстве,с использованием современного оборудования и проверенных технологий.</p>
               <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-              <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. ВСе дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+              <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
               <p>Доставка нашего мороженого до заказчика осуществляется в специальном термопакете, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
               <!-- картинки будут как фон в CCS. -->
           </section>
           <section class="last-post">
             Новое в нашем блоге
-            <a href="#"><!-- Как сделать, тобы выводилось название по ссылке - 10 способов сервировки фруктовых щербетов к столу --></a>
+            <a href="#"></a>
           </section>
           <section class="subscribe">
-            <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе<br>
-              всего самого вкусного, что у нас происходит. Обещаем не спамить<br>
-              и не слать всякой ненужно ерунды. Честно =)</p>
+            <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужно ерунды. Честно =)</p>
               <!-- Здесь будет форма -->
           </section>
           <section class="map">
             <div class="address">
-              <p class="normal">Адрес главного офиса<br>и онлайн-магазина:</p>
-              <p class="bold">Улица Большая Конюшенная<br>19/8, Санкт-Петербург</p>
+              <p class="normal">Адрес главного офиса и онлайн-магазина:</p>
+              <p class="bold">Улица Большая Конюшенная 19/8, Санкт-Петербург</p>
               <p class="normal">Для заказов по телефону:</p>
               <p class="bold">8 812 450-25-25</p>
               <p class="normal">(с 10 до 20 ежедневно)</p>
@@ -115,7 +144,6 @@
             <ul class="about-points">
               <li><a href="#">Для поставщиков</a></li>
               <li><a href="#">Наши документы</a></li>
-              <br>
               <li><a href="#">О производстве</a></li>
               <li><a href="#">Экологические стандарты</a></li>
             </ul>
